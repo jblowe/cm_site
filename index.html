@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CM Building Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <button class="menu-btn" id="menu" aria-label="Toggle folders">☰</button>
+    <h1 id="title">Derivatives</h1>
+    <span class="sub" id="subtitle"></span>
+    <span class="spacer"></span>
+    <span class="count" id="total"></span>
+  </header>
+  <nav>
+    <input id="filter" type="search" placeholder="Filter folders…" autocomplete="off">
+    <div id="nav-list"></div>
+  </nav>
+  <main id="stage"></main>
+  <div class="backdrop" id="backdrop"></div>
+</div>
+<div id="lb"><img alt=""><div class="cap"></div></div>
+<script src="app.js"></script>
+<script>initApp("manifest.json");</script>
+</body>
+</html>
